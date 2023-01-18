@@ -1928,7 +1928,7 @@ section {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-discovery);
 }
 
 .hero p {
@@ -1946,10 +1946,10 @@ section {
   padding: 14px 40px;
   border-radius: 50px;
   transition: 0.3s;
-  color: #fff;
+  color: var(--color-discovery);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--color-discovery);
 }
 
 .hero .btn-get-started:hover {
