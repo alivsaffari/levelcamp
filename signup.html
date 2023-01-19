@@ -102,8 +102,8 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2 style="color: #fb743e;">ثبت نام در رویداد</h2>
-              <p>برای ثبت نام در رویداد کافیست فرم زیر را پر کنید.</p>
+              <h2 style="color: #fb743e;">ورود و یا ثبت نام در رویداد</h2>
+              <p>برای ورود و یا ثبت نام در رویداد کافیست فرم زیر را پر کنید.</p>
             </div>
           </div>
         </div>
@@ -113,44 +113,58 @@
     <section class="sample-page">
       <div class="container" data-aos="fade-up">
 
-        <form id="regForm" action="">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <form id="regForm" action="">
           
-          <!-- One "tab" for each step in the form: -->
-          <div class="tab">نام و نام خانوادگی:
-            <p><input type="text" placeholder="نام" oninput="this.className = ''"></p>
-            <p><input type="text" placeholder="نام خانوادگی" oninput="this.className = ''"></p>
-            <p><input type="datetime" placeholder="تاریخ تولد" oninput="this.className = ''" class="bdate"></p>
-            <p><input type="number" placeholder="کد ملی" oninput="this.className = ''"></p>
+              <!-- One "tab" for each step in the form: -->
+              <div class="tab">نام و نام خانوادگی:
+                <p><input type="text" placeholder="نام" oninput="this.className = ''"></p>
+                <p><input type="text" placeholder="نام خانوادگی" oninput="this.className = ''"></p>
+                تاریخ تولد:
+                <p><input type="datetime" placeholder="تاریخ تولد" oninput="this.className = ''" class="bdate"></p>
+                <p><input type="number" placeholder="کد ملی" oninput="this.className = ''"></p>
+              </div>
+              
+              <div class="tab">اطلاعات تماس:
+                <p><input type="tel" placeholder="شماره تماس" oninput="this.className = ''"></p>
+                <p><input type="text" placeholder="استان محل زندگی" oninput="this.className = ''"></p>
+                <p><input type="text" placeholder="شهر محل زندگی" oninput="this.className = ''"></p>
+                <p><input type="number" placeholder="کد پستی" oninput="this.className = ''"></p>
+              </div>
+              
+              <div class="tab">اطلاعات تحصیلی:
+                <p><input type="number" placeholder="پایه تحصیلی" oninput="this.className = ''"></p>
+                <p><input type="text" placeholder="رشته تحصیلی" oninput="this.className = ''"></p>
+                <p><input type="text" placeholder="نام مدرسه" oninput="this.className = ''"></p>
+              </div>
+              
+              <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">قبلی</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">بعدی</button>
+                </div>
+              </div>
+              
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+              
+              </form>
           </div>
-          
-          <div class="tab">اطلاعات تماس:
-            <p><input type="tel" placeholder="شماره تماس" oninput="this.className = ''"></p>
-            <p><input type="text" placeholder="استان محل زندگی" oninput="this.className = ''"></p>
-            <p><input type="text" placeholder="شهر محل زندگی" oninput="this.className = ''"></p>
-            <p><input type="number" placeholder="کد پستی" oninput="this.className = ''"></p>
+          <div class="col-lg-6">
+            <form action="">
+              <div class="loginForm" style="margin: 100px auto; padding: 40px; width: 70%;">ورود به پنل رویداد:
+                <p><input type="number" placeholder="کد ملی" oninput="this.className = ''"></p>
+                <p><input type="tel" placeholder="شماره تماس" oninput="this.className = ''"></p>
+                <button type="submit">ورود به پنل</button>
+              </div>
+            </form>
           </div>
-          
-          <div class="tab">اطلاعات تحصیلی:
-            <p><input type="number" placeholder="پایه تحصیلی" oninput="this.className = ''"></p>
-            <p><input type="text" placeholder="رشته تحصیلی" oninput="this.className = ''"></p>
-            <p><input type="text" placeholder="نام مدرسه" oninput="this.className = ''"></p>
-          </div>
-          
-          <div style="overflow:auto;">
-            <div style="float:right;">
-              <button type="button" id="prevBtn" onclick="nextPrev(-1)">قبلی</button>
-              <button type="button" id="nextBtn" onclick="nextPrev(1)">بعدی</button>
-            </div>
-          </div>
-          
-          <!-- Circles which indicates the steps of the form: -->
-          <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-          </div>
-          
-          </form>
+        </div>
 
       </div>
     </section>
